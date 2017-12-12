@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A920C74D5827443A838E235 /* libPods-MVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD069E3D90298BB54FC1C335 /* libPods-MVVMTests.a */; };
 		4C082B8A335B46A76871887F /* libPods-MVVMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE07ECBAA45F0278E80F5B3 /* libPods-MVVMUITests.a */; };
-		8EB88F721FD827C4008AF03F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F711FD827C4008AF03F /* AppDelegate.m */; };
+		8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8656311FDEB2CC00829514 /* DXAppDelegate.m */; };
+		8E8656361FDEB94400829514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8656351FDEB94400829514 /* Assets.xcassets */; };
 		8EB88F751FD827C4008AF03F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F741FD827C4008AF03F /* ViewController.m */; };
 		8EB88F781FD827C4008AF03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB88F761FD827C4008AF03F /* Main.storyboard */; };
-		8EB88F7A1FD827C4008AF03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB88F791FD827C4008AF03F /* Assets.xcassets */; };
-		8EB88F7D1FD827C4008AF03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB88F7B1FD827C4008AF03F /* LaunchScreen.storyboard */; };
 		8EB88F801FD827C4008AF03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F7F1FD827C4008AF03F /* main.m */; };
 		8EB88F8A1FD827C4008AF03F /* MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F891FD827C4008AF03F /* MVVMTests.m */; };
 		8EB88F951FD827C4008AF03F /* MVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F941FD827C4008AF03F /* MVVMUITests.m */; };
@@ -42,14 +41,13 @@
 		184D6AC58AD5361B40755E25 /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		65158F16447EB9F0531C961B /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88597D5A8DD4BE07D8090EEE /* Pods-MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTests/Pods-MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E8656301FDEB2CC00829514 /* DXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXAppDelegate.h; sourceTree = "<group>"; };
+		8E8656311FDEB2CC00829514 /* DXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXAppDelegate.m; sourceTree = "<group>"; };
+		8E8656351FDEB94400829514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB88F6D1FD827C4008AF03F /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EB88F701FD827C4008AF03F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8EB88F711FD827C4008AF03F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8EB88F731FD827C4008AF03F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8EB88F741FD827C4008AF03F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8EB88F771FD827C4008AF03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EB88F791FD827C4008AF03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8EB88F7C1FD827C4008AF03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB88F7E1FD827C4008AF03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EB88F7F1FD827C4008AF03F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EB88F851FD827C4008AF03F /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +104,112 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8E8656211FDEB0F200829514 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		8E8656221FDEB0F200829514 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8E8656241FDEB0F200829514 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8E86562B1FDEB1B800829514 /* Category */,
+				8E86562A1FDEB1B800829514 /* Macro */,
+				8E8656291FDEB1B800829514 /* PCH */,
+				8E86562D1FDEB1B800829514 /* Singleton */,
+				8E86562C1FDEB1B800829514 /* Tools */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		8E8656251FDEB0F200829514 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E8656261FDEB0F300829514 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		8E8656271FDEB0F300829514 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8E8656281FDEB0F300829514 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8E8656291FDEB1B800829514 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		8E86562A1FDEB1B800829514 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		8E86562B1FDEB1B800829514 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8E86562C1FDEB1B800829514 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8E86562D1FDEB1B800829514 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		8E86562F1FDEB26400829514 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E8656341FDEB4B300829514 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8E8656351FDEB94400829514 /* Assets.xcassets */,
+				8EB88F7F1FD827C4008AF03F /* main.m */,
+				8EB88F7E1FD827C4008AF03F /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		8EB88F641FD827C4008AF03F = {
 			isa = PBXGroup;
 			children = (
@@ -131,15 +235,20 @@
 		8EB88F6F1FD827C4008AF03F /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				8EB88F701FD827C4008AF03F /* AppDelegate.h */,
-				8EB88F711FD827C4008AF03F /* AppDelegate.m */,
+				8E8656301FDEB2CC00829514 /* DXAppDelegate.h */,
+				8E8656311FDEB2CC00829514 /* DXAppDelegate.m */,
+				8E86562F1FDEB26400829514 /* Main */,
+				8E8656221FDEB0F200829514 /* Base */,
+				8E8656251FDEB0F200829514 /* Classes */,
+				8E8656211FDEB0F200829514 /* Custom */,
+				8E8656271FDEB0F300829514 /* API */,
+				8E8656261FDEB0F300829514 /* Framework */,
+				8E8656241FDEB0F200829514 /* Support */,
+				8E8656281FDEB0F300829514 /* Resources */,
 				8EB88F731FD827C4008AF03F /* ViewController.h */,
 				8EB88F741FD827C4008AF03F /* ViewController.m */,
 				8EB88F761FD827C4008AF03F /* Main.storyboard */,
-				8EB88F791FD827C4008AF03F /* Assets.xcassets */,
-				8EB88F7B1FD827C4008AF03F /* LaunchScreen.storyboard */,
-				8EB88F7E1FD827C4008AF03F /* Info.plist */,
-				8EB88F7F1FD827C4008AF03F /* main.m */,
+				8E8656341FDEB4B300829514 /* Others */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -243,6 +352,7 @@
 		8EB88F651FD827C4008AF03F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DX;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = DXin;
 				TargetAttributes = {
@@ -287,8 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB88F7D1FD827C4008AF03F /* LaunchScreen.storyboard in Resources */,
-				8EB88F7A1FD827C4008AF03F /* Assets.xcassets in Resources */,
+				8E8656361FDEB94400829514 /* Assets.xcassets in Resources */,
 				8EB88F781FD827C4008AF03F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +563,7 @@
 			files = (
 				8EB88F751FD827C4008AF03F /* ViewController.m in Sources */,
 				8EB88F801FD827C4008AF03F /* main.m in Sources */,
-				8EB88F721FD827C4008AF03F /* AppDelegate.m in Sources */,
+				8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,14 +605,6 @@
 				8EB88F771FD827C4008AF03F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8EB88F7B1FD827C4008AF03F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EB88F7C1FD827C4008AF03F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -618,6 +719,7 @@
 			baseConfigurationReference = 184D6AC58AD5361B40755E25 /* Pods-MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 555MSEDP84;
 				INFOPLIST_FILE = MVVM/Info.plist;
@@ -634,6 +736,7 @@
 			baseConfigurationReference = 9A740796565E260E44B1C2A1 /* Pods-MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 555MSEDP84;
 				INFOPLIST_FILE = MVVM/Info.plist;
