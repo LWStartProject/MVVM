@@ -7,6 +7,7 @@
 //
 
 #import "DXAppDelegate.h"
+#import "DXTabBarController.h"
 
 @interface DXAppDelegate ()
 
@@ -16,8 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 延长启动页面时间
-    [NSThread sleepForTimeInterval:3.0];
+//    [NSThread sleepForTimeInterval:3.0];
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    DXTabBarController *tabBarVC = [DXTabBarController tabBarController];
+    self.window.rootViewController = tabBarVC;
+    [self.window makeKeyWindow];
     return YES;
 }
 

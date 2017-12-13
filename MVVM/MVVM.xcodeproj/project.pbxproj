@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		2A920C74D5827443A838E235 /* libPods-MVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD069E3D90298BB54FC1C335 /* libPods-MVVMTests.a */; };
 		4C082B8A335B46A76871887F /* libPods-MVVMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE07ECBAA45F0278E80F5B3 /* libPods-MVVMUITests.a */; };
+		8E4E42111FE0E2F700DEEEB3 /* DXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420B1FE0E2F700DEEEB3 /* DXTabBarButton.m */; };
+		8E4E42121FE0E2F700DEEEB3 /* DXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420C1FE0E2F700DEEEB3 /* DXTabBar.m */; };
+		8E4E42131FE0E2F700DEEEB3 /* DXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420D1FE0E2F700DEEEB3 /* DXTabBarController.m */; };
+		8E4E42141FE0E2F700DEEEB3 /* DXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420E1FE0E2F700DEEEB3 /* DXTabBarItem.m */; };
+		8E4E42281FE0E36000DEEEB3 /* DXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E42221FE0E36000DEEEB3 /* DXNavigationController.m */; };
+		8E4E422C1FE0E3DD00DEEEB3 /* DXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E422B1FE0E3DD00DEEEB3 /* DXBaseViewController.m */; };
+		8E4E422F1FE0E3F300DEEEB3 /* DXHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E422E1FE0E3F300DEEEB3 /* DXHomePageVC.m */; };
+		8E4E42331FE0E46F00DEEEB3 /* DXContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E42321FE0E46F00DEEEB3 /* DXContactVC.m */; };
+		8E4E42371FE0E4D100DEEEB3 /* DXDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E42361FE0E4D100DEEEB3 /* DXDiscoverVC.m */; };
+		8E4E423C1FE0E4FA00DEEEB3 /* DXMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E423B1FE0E4FA00DEEEB3 /* DXMeVC.m */; };
+		8E4E42401FE0E7EB00DEEEB3 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */; };
 		8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8656311FDEB2CC00829514 /* DXAppDelegate.m */; };
 		8E8656361FDEB94400829514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8656351FDEB94400829514 /* Assets.xcassets */; };
 		8EB88F751FD827C4008AF03F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F741FD827C4008AF03F /* ViewController.m */; };
@@ -41,6 +52,29 @@
 		184D6AC58AD5361B40755E25 /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		65158F16447EB9F0531C961B /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88597D5A8DD4BE07D8090EEE /* Pods-MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTests/Pods-MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E4E42091FE0E2F700DEEEB3 /* DXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTabBarController.h; sourceTree = "<group>"; };
+		8E4E420A1FE0E2F700DEEEB3 /* DXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTabBarItem.h; sourceTree = "<group>"; };
+		8E4E420B1FE0E2F700DEEEB3 /* DXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTabBarButton.m; sourceTree = "<group>"; };
+		8E4E420C1FE0E2F700DEEEB3 /* DXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTabBar.m; sourceTree = "<group>"; };
+		8E4E420D1FE0E2F700DEEEB3 /* DXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTabBarController.m; sourceTree = "<group>"; };
+		8E4E420E1FE0E2F700DEEEB3 /* DXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTabBarItem.m; sourceTree = "<group>"; };
+		8E4E420F1FE0E2F700DEEEB3 /* DXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTabBarButton.h; sourceTree = "<group>"; };
+		8E4E42101FE0E2F700DEEEB3 /* DXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTabBar.h; sourceTree = "<group>"; };
+		8E4E42201FE0E36000DEEEB3 /* DXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXNavigationController.h; sourceTree = "<group>"; };
+		8E4E42221FE0E36000DEEEB3 /* DXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXNavigationController.m; sourceTree = "<group>"; };
+		8E4E422A1FE0E3DD00DEEEB3 /* DXBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXBaseViewController.h; sourceTree = "<group>"; };
+		8E4E422B1FE0E3DD00DEEEB3 /* DXBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXBaseViewController.m; sourceTree = "<group>"; };
+		8E4E422D1FE0E3F300DEEEB3 /* DXHomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXHomePageVC.h; sourceTree = "<group>"; };
+		8E4E422E1FE0E3F300DEEEB3 /* DXHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXHomePageVC.m; sourceTree = "<group>"; };
+		8E4E42311FE0E46F00DEEEB3 /* DXContactVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXContactVC.h; sourceTree = "<group>"; };
+		8E4E42321FE0E46F00DEEEB3 /* DXContactVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXContactVC.m; sourceTree = "<group>"; };
+		8E4E42351FE0E4D100DEEEB3 /* DXDiscoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXDiscoverVC.h; sourceTree = "<group>"; };
+		8E4E42361FE0E4D100DEEEB3 /* DXDiscoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXDiscoverVC.m; sourceTree = "<group>"; };
+		8E4E423A1FE0E4FA00DEEEB3 /* DXMeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXMeVC.h; sourceTree = "<group>"; };
+		8E4E423B1FE0E4FA00DEEEB3 /* DXMeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXMeVC.m; sourceTree = "<group>"; };
+		8E4E423D1FE0E67800DEEEB3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8E4E423E1FE0E7EB00DEEEB3 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8E8656301FDEB2CC00829514 /* DXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXAppDelegate.h; sourceTree = "<group>"; };
 		8E8656311FDEB2CC00829514 /* DXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXAppDelegate.m; sourceTree = "<group>"; };
 		8E8656351FDEB94400829514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,9 +138,71 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8E4E42081FE0E2F700DEEEB3 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E42091FE0E2F700DEEEB3 /* DXTabBarController.h */,
+				8E4E420D1FE0E2F700DEEEB3 /* DXTabBarController.m */,
+				8E4E420F1FE0E2F700DEEEB3 /* DXTabBarButton.h */,
+				8E4E420B1FE0E2F700DEEEB3 /* DXTabBarButton.m */,
+				8E4E42101FE0E2F700DEEEB3 /* DXTabBar.h */,
+				8E4E420C1FE0E2F700DEEEB3 /* DXTabBar.m */,
+				8E4E420A1FE0E2F700DEEEB3 /* DXTabBarItem.h */,
+				8E4E420E1FE0E2F700DEEEB3 /* DXTabBarItem.m */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		8E4E42151FE0E36000DEEEB3 /* CustomNavigate */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E42201FE0E36000DEEEB3 /* DXNavigationController.h */,
+				8E4E42221FE0E36000DEEEB3 /* DXNavigationController.m */,
+			);
+			path = CustomNavigate;
+			sourceTree = "<group>";
+		};
+		8E4E42291FE0E3B000DEEEB3 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E422D1FE0E3F300DEEEB3 /* DXHomePageVC.h */,
+				8E4E422E1FE0E3F300DEEEB3 /* DXHomePageVC.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		8E4E42301FE0E41500DEEEB3 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E42311FE0E46F00DEEEB3 /* DXContactVC.h */,
+				8E4E42321FE0E46F00DEEEB3 /* DXContactVC.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		8E4E42341FE0E4BF00DEEEB3 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E42351FE0E4D100DEEEB3 /* DXDiscoverVC.h */,
+				8E4E42361FE0E4D100DEEEB3 /* DXDiscoverVC.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		8E4E42391FE0E4EE00DEEEB3 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E423A1FE0E4FA00DEEEB3 /* DXMeVC.h */,
+				8E4E423B1FE0E4FA00DEEEB3 /* DXMeVC.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		8E8656211FDEB0F200829514 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E42151FE0E36000DEEEB3 /* CustomNavigate */,
+				8E4E42081FE0E2F700DEEEB3 /* CustomTabBar */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -114,6 +210,8 @@
 		8E8656221FDEB0F200829514 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E422A1FE0E3DD00DEEEB3 /* DXBaseViewController.h */,
+				8E4E422B1FE0E3DD00DEEEB3 /* DXBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -175,6 +273,8 @@
 		8E86562B1FDEB1B800829514 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E423E1FE0E7EB00DEEEB3 /* UIView+Extension.h */,
+				8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -196,6 +296,10 @@
 		8E86562F1FDEB26400829514 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E42391FE0E4EE00DEEEB3 /* Me */,
+				8E4E42341FE0E4BF00DEEEB3 /* Discover */,
+				8E4E42301FE0E41500DEEEB3 /* Contact */,
+				8E4E42291FE0E3B000DEEEB3 /* HomePage */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -203,6 +307,7 @@
 		8E8656341FDEB4B300829514 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E423D1FE0E67800DEEEB3 /* PrefixHeader.pch */,
 				8E8656351FDEB94400829514 /* Assets.xcassets */,
 				8EB88F7F1FD827C4008AF03F /* main.m */,
 				8EB88F7E1FD827C4008AF03F /* Info.plist */,
@@ -562,8 +667,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB88F751FD827C4008AF03F /* ViewController.m in Sources */,
+				8E4E422F1FE0E3F300DEEEB3 /* DXHomePageVC.m in Sources */,
+				8E4E42121FE0E2F700DEEEB3 /* DXTabBar.m in Sources */,
 				8EB88F801FD827C4008AF03F /* main.m in Sources */,
+				8E4E42371FE0E4D100DEEEB3 /* DXDiscoverVC.m in Sources */,
+				8E4E42141FE0E2F700DEEEB3 /* DXTabBarItem.m in Sources */,
+				8E4E42131FE0E2F700DEEEB3 /* DXTabBarController.m in Sources */,
+				8E4E42331FE0E46F00DEEEB3 /* DXContactVC.m in Sources */,
+				8E4E42281FE0E36000DEEEB3 /* DXNavigationController.m in Sources */,
+				8E4E423C1FE0E4FA00DEEEB3 /* DXMeVC.m in Sources */,
+				8E4E42401FE0E7EB00DEEEB3 /* UIView+Extension.m in Sources */,
+				8E4E422C1FE0E3DD00DEEEB3 /* DXBaseViewController.m in Sources */,
 				8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */,
+				8E4E42111FE0E2F700DEEEB3 /* DXTabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +838,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 555MSEDP84;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVM/PrefixHeader.pch";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -739,6 +856,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 555MSEDP84;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVM/PrefixHeader.pch";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
