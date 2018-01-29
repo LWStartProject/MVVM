@@ -14,7 +14,7 @@ target 'MVVM' do
 #pod 'SSZipArchive', '0.9'
 
     pod 'AFNetworking'
-
+    pod 'Masonry', '~> 1.1.0'
 
   target 'MVVMTests' do
     inherit! :search_paths

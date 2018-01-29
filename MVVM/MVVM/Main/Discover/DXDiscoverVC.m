@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = RGB(224, 224, 230);
+    self.navigationItem.title = @"发现";
 }
 
 - (void)didReceiveMemoryWarning {

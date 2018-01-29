@@ -48,6 +48,12 @@
 //    self.tabBar.barTintColor = RGB(247, 247, 247); // tabBar的背景色
 //    self.tabBar.tintColor = RGB(0, 133, 208); // 文字颜色
 //    self.tabBar.unselectedItemTintColor = RGB(51, 51, 51); // 不选中的Item的颜色
+    
+    // 1、[[UIApplicationsharedApplication]setStatusBarHidden:hidden]，必须在View controller-based status bar appearance == NO条件下才能生效
+    // 2、preferredStatusBarStyle 在 View controller-based status bar appearance == YES 才生效
+    // 3、设置Status bar is initially hidden -> YES可以隐藏启动页展示过程的状态栏
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -77,6 +83,10 @@
     [self setViewControllers:controllers];
 }
 
+// View controller-based status bar appearance == YES 才生效
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 
 @end

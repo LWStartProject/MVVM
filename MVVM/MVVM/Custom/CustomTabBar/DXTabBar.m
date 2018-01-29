@@ -45,7 +45,7 @@
     
     DXTabBarButton *tabBarButton = [[DXTabBarButton alloc] init];
     [tabBarButton setTitleColor:RGB(51, 51, 51) forState:UIControlStateNormal];
-    [tabBarButton setTitleColor:RGB(0, 133, 208) forState:UIControlStateSelected];
+    [tabBarButton setTitleColor:RGB(39, 147, 2) forState:UIControlStateSelected];
     [tabBarButton setTitle:title forState:UIControlStateNormal];
     tabBarButton.backgroundColor = RGB(247, 247, 247);
     [tabBarButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@", imageString]]

@@ -10,4 +10,11 @@
 
 @interface DXBaseViewController : UIViewController
 
+
+/**
+ navitationBar 右边按钮事件
+ @param item 按钮
+ */
+- (void)rightBarButtonItemAction:(UIBarButtonItem *)item;
+
 @end

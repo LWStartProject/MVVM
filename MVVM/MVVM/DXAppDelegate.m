@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     DXTabBarController *tabBarVC = [DXTabBarController tabBarController];
     self.window.rootViewController = tabBarVC;
-    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

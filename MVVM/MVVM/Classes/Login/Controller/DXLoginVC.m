@@ -1,23 +1,22 @@
 //
-//  DXContactVC.m
+//  DXLoginVC.m
 //  MVVM
 //
-//  Created by 123456 on 2017/12/13.
-//  Copyright © 2017年 DXin. All rights reserved.
+//  Created by 123456 on 2018/1/29.
+//  Copyright © 2018年 DXin. All rights reserved.
 //
 
-#import "DXContactVC.h"
+#import "DXLoginVC.h"
 
-@interface DXContactVC ()
+@interface DXLoginVC ()
 
 @end
 
-@implementation DXContactVC
+@implementation DXLoginVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"通讯录";
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

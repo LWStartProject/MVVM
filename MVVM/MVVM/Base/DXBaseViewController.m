@@ -7,6 +7,7 @@
 //
 
 #import "DXBaseViewController.h"
+#import "DXHomePageVC.h"
 
 @interface DXBaseViewController ()
 
@@ -14,24 +15,46 @@
 
 @implementation DXBaseViewController
 
+/// MARK: - Life Cyle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupNavigationBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/// MARK: - Privated Interface
+- (void)setupNavigationBar {
+    
+    NSMutableArray *rightBarButtonItems = @[].mutableCopy;
+    if ([self isKindOfClass:[DXHomePageVC class]]) {
+        UIImage *rightImage = [[UIImage imageNamed:@"barbuttonicon_add_30x30"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:rightImage style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemAction:)];
+        [rightBarButtonItems addObject:rightItem];
+    }
+    
+    if (rightBarButtonItems.count <= 0) {
+        return;
+    }
+    self.navigationItem.rightBarButtonItems = rightBarButtonItems;
 }
 
-/*
-#pragma mark - Navigation
+/// MARK: - Net Work
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+/// MARK: - User Actions
+- (void)rightBarButtonItemAction:(UIBarButtonItem *)item {
+    
 }
-*/
+
+/// MARK: - Public Interface
+
+
+/// MARK: - Delegate & DataSourch
+
+
+/// MARK: - Laze Initializer
+
+
+
+
 
 @end

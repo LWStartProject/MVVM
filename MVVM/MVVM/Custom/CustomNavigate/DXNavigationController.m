@@ -19,14 +19,15 @@
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_64"] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     navigationBar.tintColor = RGB(49, 130, 207);
-    [navigationBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:16],
-                                            NSForegroundColorAttributeName : [UIColor blackColor]}];
+    navigationBar.barTintColor = RGB(20, 20, 20);
+    [navigationBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
+                                            NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationBar.barTintColor = [UIColor whiteColor];
+
 }
 
 - (void)didReceiveMemoryWarning {
