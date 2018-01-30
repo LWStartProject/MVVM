@@ -17,4 +17,17 @@
  */
 - (void)rightBarButtonItemAction:(UIBarButtonItem *)item;
 
+/**
+ push 控制器
+ @param viewController 子控制器
+ @param animated 是否动画
+ */
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+
+/**
+ pop 控制器
+ @param animated 是否动画
+ */
+- (void)popViewControllerAnimated:(BOOL)animated;
+
 @end

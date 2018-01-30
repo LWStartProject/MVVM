@@ -7,31 +7,50 @@
 //
 
 #import "DXLoginVC.h"
+#import "DXLoginView.h"
 
 @interface DXLoginVC ()
+
+@property (nonatomic, strong) DXLoginView *loginView;
 
 @end
 
 @implementation DXLoginVC
 
+/// MARK: - Life Cyle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/// MARK: - Privated Interface
+- (void)configView {
+    self.navigationItem.title = @"登录";
+    self.view.backgroundColor = RGB(247, 247, 247);
+    [self.view addSubview:self.loginView];
+    [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
-/*
-#pragma mark - Navigation
+/// MARK: - Net Work
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+/// MARK: - User Actions
+
+
+/// MARK: - Public Interface
+
+
+/// MARK: - Delegate & DataSourch
+
+
+/// MARK: - Laze Initializer
+- (DXLoginView *)loginView {
+    if (_loginView == nil) {
+        _loginView = [[DXLoginView alloc] init];
+    }
+    return _loginView;
 }
-*/
 
 @end

@@ -23,10 +23,24 @@
 
 /// MARK: - Privated Interface
 - (void)setupNavigationBar {
-    
+    [self setupNavigationBarLeftItems];
+    [self setupNavigationBarRightItems];
+}
+
+- (void)setupNavigationBarLeftItems {
+//    NSInteger controllerCount = self.navigationController.childViewControllers.count;
+//    if (controllerCount <= 1) {
+//        return;
+//    }
+//    NSString *title = self.navigationItem.title.length > 0 ? self.navigationItem.title : @"返回";
+//    UIBarButtonItem *backItem = [UIBarButtonItem dx_backItemWithTitle:title imageName:@"barbuttonicon_back_15x30" target:self action:@selector(backItemAction:)];
+//    self.navigationItem.leftBarButtonItems = @[backItem];
+}
+
+- (void)setupNavigationBarRightItems {
     NSMutableArray *rightBarButtonItems = @[].mutableCopy;
     if ([self isKindOfClass:[DXHomePageVC class]]) {
-        UIImage *rightImage = [[UIImage imageNamed:@"barbuttonicon_add_30x30"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        UIImage *rightImage =  [UIImage dx_imageAlwaysShowOriginalImageWithImageName:@"barbuttonicon_add_30x30"];
         UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:rightImage style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemAction:)];
         [rightBarButtonItems addObject:rightItem];
     }
@@ -45,8 +59,18 @@
     
 }
 
-/// MARK: - Public Interface
+- (void)backItemAction:(UIBarButtonItem *)item {
+    [self popViewControllerAnimated:YES];
+}
 
+/// MARK: - Public Interface
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [self.navigationController pushViewController:viewController animated:animated];
+}
+
+- (void)popViewControllerAnimated:(BOOL)animated {
+    [self.navigationController popViewControllerAnimated:animated];
+}
 
 /// MARK: - Delegate & DataSourch
 

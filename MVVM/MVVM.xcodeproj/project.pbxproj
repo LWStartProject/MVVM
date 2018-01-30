@@ -21,8 +21,23 @@
 		8E4E423C1FE0E4FA00DEEEB3 /* DXMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E423B1FE0E4FA00DEEEB3 /* DXMeVC.m */; };
 		8E4E42401FE0E7EB00DEEEB3 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */; };
 		8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8656311FDEB2CC00829514 /* DXAppDelegate.m */; };
-		8E8656361FDEB94400829514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8656351FDEB94400829514 /* Assets.xcassets */; };
+		8E8D381920201D2F00C0ACFC /* UIButton+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D381820201D2F00C0ACFC /* UIButton+DXCreate.m */; };
+		8E8D381C202020F000C0ACFC /* DXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D381B202020F000C0ACFC /* DXTools.m */; };
+		8E8D381E2020463500C0ACFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D381D2020463500C0ACFC /* Assets.xcassets */; };
+		8E8D38212020472300C0ACFC /* UIImageView+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D38202020472300C0ACFC /* UIImageView+DXCreate.m */; };
+		8E8D382420204EAA00C0ACFC /* UIBarButtonItem+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D382320204EAA00C0ACFC /* UIBarButtonItem+DXCreate.m */; };
+		8E8D38272020511E00C0ACFC /* UIImage+DXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D38262020511D00C0ACFC /* UIImage+DXExtension.m */; };
 		8E9CB98B201F226900B7EC26 /* DXLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB98A201F226900B7EC26 /* DXLoginVC.m */; };
+		8E9CB993201F287400B7EC26 /* DXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB992201F287400B7EC26 /* DXBaseModel.m */; };
+		8E9CB996201F288900B7EC26 /* DXBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB995201F288900B7EC26 /* DXBaseViewModel.m */; };
+		8E9CB999201F289E00B7EC26 /* DXLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB998201F289E00B7EC26 /* DXLoginView.m */; };
+		8E9CB99C201F29D700B7EC26 /* UIView+DXNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB99B201F29D700B7EC26 /* UIView+DXNib.m */; };
+		8E9CB99F201F2A4900B7EC26 /* DXBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB99D201F2A4900B7EC26 /* DXBaseView.m */; };
+		8E9CB9A2201F2A8300B7EC26 /* DXLoginInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB9A1201F2A8300B7EC26 /* DXLoginInputView.m */; };
+		8E9CB9A5201F49A000B7EC26 /* UILabel+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB9A4201F49A000B7EC26 /* UILabel+DXCreate.m */; };
+		8E9CB9A9201F4CB000B7EC26 /* UITextField+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB9A8201F4CB000B7EC26 /* UITextField+DXCreate.m */; };
+		8E9CB9AC201F4F1D00B7EC26 /* UIView+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB9AB201F4F1D00B7EC26 /* UIView+DXCreate.m */; };
+		8E9CB9AF2020084200B7EC26 /* DXBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CB9AE2020084200B7EC26 /* DXBaseButton.m */; };
 		8EB88F801FD827C4008AF03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F7F1FD827C4008AF03F /* main.m */; };
 		8EB88F8A1FD827C4008AF03F /* MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F891FD827C4008AF03F /* MVVMTests.m */; };
 		8EB88F951FD827C4008AF03F /* MVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB88F941FD827C4008AF03F /* MVVMUITests.m */; };
@@ -76,10 +91,41 @@
 		8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8E8656301FDEB2CC00829514 /* DXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXAppDelegate.h; sourceTree = "<group>"; };
 		8E8656311FDEB2CC00829514 /* DXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXAppDelegate.m; sourceTree = "<group>"; };
-		8E8656351FDEB94400829514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E8D381720201D2F00C0ACFC /* UIButton+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DXCreate.h"; sourceTree = "<group>"; };
+		8E8D381820201D2F00C0ACFC /* UIButton+DXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DXCreate.m"; sourceTree = "<group>"; };
+		8E8D381A202020F000C0ACFC /* DXTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXTools.h; sourceTree = "<group>"; };
+		8E8D381B202020F000C0ACFC /* DXTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXTools.m; sourceTree = "<group>"; };
+		8E8D381D2020463500C0ACFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E8D381F2020472300C0ACFC /* UIImageView+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DXCreate.h"; sourceTree = "<group>"; };
+		8E8D38202020472300C0ACFC /* UIImageView+DXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DXCreate.m"; sourceTree = "<group>"; };
+		8E8D382220204EA900C0ACFC /* UIBarButtonItem+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DXCreate.h"; sourceTree = "<group>"; };
+		8E8D382320204EAA00C0ACFC /* UIBarButtonItem+DXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DXCreate.m"; sourceTree = "<group>"; };
+		8E8D38252020511D00C0ACFC /* UIImage+DXExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DXExtension.h"; sourceTree = "<group>"; };
+		8E8D38262020511D00C0ACFC /* UIImage+DXExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DXExtension.m"; sourceTree = "<group>"; };
 		8E9CB982201F136500B7EC26 /* DXMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXMacro.h; sourceTree = "<group>"; };
 		8E9CB989201F226900B7EC26 /* DXLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXLoginVC.h; sourceTree = "<group>"; };
 		8E9CB98A201F226900B7EC26 /* DXLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXLoginVC.m; sourceTree = "<group>"; };
+		8E9CB991201F287400B7EC26 /* DXBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXBaseModel.h; sourceTree = "<group>"; };
+		8E9CB992201F287400B7EC26 /* DXBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXBaseModel.m; sourceTree = "<group>"; };
+		8E9CB994201F288900B7EC26 /* DXBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXBaseViewModel.h; sourceTree = "<group>"; };
+		8E9CB995201F288900B7EC26 /* DXBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXBaseViewModel.m; sourceTree = "<group>"; };
+		8E9CB997201F289E00B7EC26 /* DXLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXLoginView.h; sourceTree = "<group>"; };
+		8E9CB998201F289E00B7EC26 /* DXLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXLoginView.m; sourceTree = "<group>"; };
+		8E9CB99A201F29D700B7EC26 /* UIView+DXNib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DXNib.h"; sourceTree = "<group>"; };
+		8E9CB99B201F29D700B7EC26 /* UIView+DXNib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DXNib.m"; sourceTree = "<group>"; };
+		8E9CB99D201F2A4900B7EC26 /* DXBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXBaseView.m; sourceTree = "<group>"; };
+		8E9CB99E201F2A4900B7EC26 /* DXBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXBaseView.h; sourceTree = "<group>"; };
+		8E9CB9A0201F2A8300B7EC26 /* DXLoginInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXLoginInputView.h; sourceTree = "<group>"; };
+		8E9CB9A1201F2A8300B7EC26 /* DXLoginInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXLoginInputView.m; sourceTree = "<group>"; };
+		8E9CB9A3201F49A000B7EC26 /* UILabel+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+DXCreate.h"; sourceTree = "<group>"; };
+		8E9CB9A4201F49A000B7EC26 /* UILabel+DXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DXCreate.m"; sourceTree = "<group>"; };
+		8E9CB9A6201F4A9500B7EC26 /* UIViewCatograyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewCatograyHeader.h; sourceTree = "<group>"; };
+		8E9CB9A7201F4CB000B7EC26 /* UITextField+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+DXCreate.h"; sourceTree = "<group>"; };
+		8E9CB9A8201F4CB000B7EC26 /* UITextField+DXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DXCreate.m"; sourceTree = "<group>"; };
+		8E9CB9AA201F4F1D00B7EC26 /* UIView+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DXCreate.h"; sourceTree = "<group>"; };
+		8E9CB9AB201F4F1D00B7EC26 /* UIView+DXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DXCreate.m"; sourceTree = "<group>"; };
+		8E9CB9AD2020084200B7EC26 /* DXBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXBaseButton.h; sourceTree = "<group>"; };
+		8E9CB9AE2020084200B7EC26 /* DXBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXBaseButton.m; sourceTree = "<group>"; };
 		8EB88F6D1FD827C4008AF03F /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB88F7E1FD827C4008AF03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EB88F7F1FD827C4008AF03F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -211,6 +257,14 @@
 			children = (
 				8E4E422A1FE0E3DD00DEEEB3 /* DXBaseViewController.h */,
 				8E4E422B1FE0E3DD00DEEEB3 /* DXBaseViewController.m */,
+				8E9CB99E201F2A4900B7EC26 /* DXBaseView.h */,
+				8E9CB99D201F2A4900B7EC26 /* DXBaseView.m */,
+				8E9CB991201F287400B7EC26 /* DXBaseModel.h */,
+				8E9CB992201F287400B7EC26 /* DXBaseModel.m */,
+				8E9CB994201F288900B7EC26 /* DXBaseViewModel.h */,
+				8E9CB995201F288900B7EC26 /* DXBaseViewModel.m */,
+				8E9CB9AD2020084200B7EC26 /* DXBaseButton.h */,
+				8E9CB9AE2020084200B7EC26 /* DXBaseButton.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -274,8 +328,25 @@
 		8E86562B1FDEB1B800829514 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8E9CB9A6201F4A9500B7EC26 /* UIViewCatograyHeader.h */,
+				8E8D38252020511D00C0ACFC /* UIImage+DXExtension.h */,
+				8E8D38262020511D00C0ACFC /* UIImage+DXExtension.m */,
+				8E8D382220204EA900C0ACFC /* UIBarButtonItem+DXCreate.h */,
+				8E8D382320204EAA00C0ACFC /* UIBarButtonItem+DXCreate.m */,
 				8E4E423E1FE0E7EB00DEEEB3 /* UIView+Extension.h */,
 				8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */,
+				8E9CB99A201F29D700B7EC26 /* UIView+DXNib.h */,
+				8E9CB99B201F29D700B7EC26 /* UIView+DXNib.m */,
+				8E9CB9A3201F49A000B7EC26 /* UILabel+DXCreate.h */,
+				8E9CB9A4201F49A000B7EC26 /* UILabel+DXCreate.m */,
+				8E9CB9A7201F4CB000B7EC26 /* UITextField+DXCreate.h */,
+				8E9CB9A8201F4CB000B7EC26 /* UITextField+DXCreate.m */,
+				8E9CB9AA201F4F1D00B7EC26 /* UIView+DXCreate.h */,
+				8E9CB9AB201F4F1D00B7EC26 /* UIView+DXCreate.m */,
+				8E8D381720201D2F00C0ACFC /* UIButton+DXCreate.h */,
+				8E8D381820201D2F00C0ACFC /* UIButton+DXCreate.m */,
+				8E8D381F2020472300C0ACFC /* UIImageView+DXCreate.h */,
+				8E8D38202020472300C0ACFC /* UIImageView+DXCreate.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -283,6 +354,8 @@
 		8E86562C1FDEB1B800829514 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8E8D381A202020F000C0ACFC /* DXTools.h */,
+				8E8D381B202020F000C0ACFC /* DXTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -308,8 +381,8 @@
 		8E8656341FDEB4B300829514 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				8E8D381D2020463500C0ACFC /* Assets.xcassets */,
 				8E4E423D1FE0E67800DEEEB3 /* PrefixHeader.pch */,
-				8E8656351FDEB94400829514 /* Assets.xcassets */,
 				8EB88F7F1FD827C4008AF03F /* main.m */,
 				8EB88F7E1FD827C4008AF03F /* Info.plist */,
 			);
@@ -337,6 +410,10 @@
 		8E9CB98D201F229600B7EC26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E9CB997201F289E00B7EC26 /* DXLoginView.h */,
+				8E9CB998201F289E00B7EC26 /* DXLoginView.m */,
+				8E9CB9A0201F2A8300B7EC26 /* DXLoginInputView.h */,
+				8E9CB9A1201F2A8300B7EC26 /* DXLoginInputView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -525,7 +602,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8656361FDEB94400829514 /* Assets.xcassets in Resources */,
+				8E8D381E2020463500C0ACFC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,20 +765,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9CB993201F287400B7EC26 /* DXBaseModel.m in Sources */,
+				8E9CB99F201F2A4900B7EC26 /* DXBaseView.m in Sources */,
 				8E4E422F1FE0E3F300DEEEB3 /* DXHomePageVC.m in Sources */,
+				8E9CB999201F289E00B7EC26 /* DXLoginView.m in Sources */,
 				8E4E42121FE0E2F700DEEEB3 /* DXTabBar.m in Sources */,
+				8E9CB9A2201F2A8300B7EC26 /* DXLoginInputView.m in Sources */,
 				8EB88F801FD827C4008AF03F /* main.m in Sources */,
+				8E9CB9A5201F49A000B7EC26 /* UILabel+DXCreate.m in Sources */,
 				8E4E42371FE0E4D100DEEEB3 /* DXDiscoverVC.m in Sources */,
+				8E8D38212020472300C0ACFC /* UIImageView+DXCreate.m in Sources */,
 				8E4E42141FE0E2F700DEEEB3 /* DXTabBarItem.m in Sources */,
 				8E4E42131FE0E2F700DEEEB3 /* DXTabBarController.m in Sources */,
+				8E8D38272020511E00C0ACFC /* UIImage+DXExtension.m in Sources */,
 				8E4E42331FE0E46F00DEEEB3 /* DXContactVC.m in Sources */,
 				8E4E42281FE0E36000DEEEB3 /* DXNavigationController.m in Sources */,
 				8E4E423C1FE0E4FA00DEEEB3 /* DXMeVC.m in Sources */,
+				8E8D382420204EAA00C0ACFC /* UIBarButtonItem+DXCreate.m in Sources */,
 				8E4E42401FE0E7EB00DEEEB3 /* UIView+Extension.m in Sources */,
+				8E8D381920201D2F00C0ACFC /* UIButton+DXCreate.m in Sources */,
 				8E4E422C1FE0E3DD00DEEEB3 /* DXBaseViewController.m in Sources */,
+				8E8D381C202020F000C0ACFC /* DXTools.m in Sources */,
 				8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */,
+				8E9CB996201F288900B7EC26 /* DXBaseViewModel.m in Sources */,
+				8E9CB9AC201F4F1D00B7EC26 /* UIView+DXCreate.m in Sources */,
 				8E9CB98B201F226900B7EC26 /* DXLoginVC.m in Sources */,
+				8E9CB9AF2020084200B7EC26 /* DXBaseButton.m in Sources */,
+				8E9CB99C201F29D700B7EC26 /* UIView+DXNib.m in Sources */,
 				8E4E42111FE0E2F700DEEEB3 /* DXTabBarButton.m in Sources */,
+				8E9CB9A9201F4CB000B7EC26 /* UITextField+DXCreate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
