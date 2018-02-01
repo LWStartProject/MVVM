@@ -8,28 +8,49 @@
 
 #import "DXLoginVC.h"
 #import "DXLoginView.h"
+#import "DXLoginViewModel.h"
 
 @interface DXLoginVC ()
 
 @property (nonatomic, strong) DXLoginView *loginView;
+@property (nonatomic, strong, readonly) DXLoginViewModel *viewModel;
 
 @end
 
-@implementation DXLoginVC
+@implementation DXLoginVC {
+    FBKVOController *_KVOController;
+}
+
+@dynamic viewModel;
 
 /// MARK: - Life Cyle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configView];
+    [self _configView];
 }
 
 /// MARK: - Privated Interface
-- (void)configView {
-    self.navigationItem.title = @"登录";
+- (void)_configView {
+//    self.navigationItem.title = @"登录";
     self.view.backgroundColor = RGB(247, 247, 247);
     [self.view addSubview:self.loginView];
-    [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+//    self.loginView.frame = CGRectMake(0, 0, DXScreen_Width(), DXScreen_Height());
+//    [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.left.bottom.right.equalTo(self.view);
+//    }];
+    
+    DXLoginInputView *inputView = self.loginView.inputView;
+    [inputView.phoneNumberTextField addTarget:self
+                                       action:@selector(_textFieldTextDidChange:)
+                             forControlEvents:UIControlEventEditingChanged];
+    [inputView.verifyCodeTextField addTarget:self
+                                      action:@selector(_textFieldTextDidChange:)
+                            forControlEvents:UIControlEventEditingChanged];
+    
+    
+    _KVOController = [FBKVOController controllerWithObserver:self];
+    [_KVOController dx_observe:self.viewModel keyPath:@"iconUrlString" block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+        [DXWebImageTool setImageWithURL:change[NSKeyValueChangeNewKey] placeholderImage:placeholderUserIcon() imageView:self.loginView.iconImageView];
     }];
 }
 
@@ -37,7 +58,11 @@
 
 
 /// MARK: - User Actions
-
+- (void)_textFieldTextDidChange:(UITextField *)textField {
+    self.viewModel.mobilePhone = self.loginView.inputView.phoneNumberTextField.text;
+    self.viewModel.verityCode = self.loginView.inputView.verifyCodeTextField.text;
+    self.loginView.loginButton.enabled = self.viewModel.validLogin;
+}
 
 /// MARK: - Public Interface
 
@@ -48,7 +73,9 @@
 /// MARK: - Laze Initializer
 - (DXLoginView *)loginView {
     if (_loginView == nil) {
-        _loginView = [[DXLoginView alloc] init];
+        _loginView = [DXLoginView loginViewWithFrame:CGRectMake(0, 0, DXScreen_Width(), DXScreen_Height()) loginButtonAction:^(UIButton *button) {
+            NSLog(@"登录");
+        }];
     }
     return _loginView;
 }

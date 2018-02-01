@@ -26,15 +26,15 @@
                                             NSForegroundColorAttributeName : [UIColor whiteColor]
                                             }];
     
-    UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];
-    [barButtonItem setTitleTextAttributes:@{
-                                            NSForegroundColorAttributeName : [UIColor whiteColor],
-                                            NSFontAttributeName : [UIFont boldSystemFontOfSize:14.f]
-                                            } forState:UIControlStateNormal];
-    [barButtonItem setTitleTextAttributes:@{
-                                            NSForegroundColorAttributeName : [UIColor blackColor],
-                                            NSFontAttributeName : [UIFont boldSystemFontOfSize:14.f]
-                                            } forState:UIControlStateHighlighted];
+//    UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];
+//    [barButtonItem setTitleTextAttributes:@{
+//                                            NSForegroundColorAttributeName : [UIColor whiteColor],
+//                                            NSFontAttributeName : [UIFont boldSystemFontOfSize:14.f]
+//                                            } forState:UIControlStateNormal];
+//    [barButtonItem setTitleTextAttributes:@{
+//                                            NSForegroundColorAttributeName : [UIColor blackColor],
+//                                            NSFontAttributeName : [UIFont boldSystemFontOfSize:14.f]
+//                                            } forState:UIControlStateHighlighted];
     
 }
 

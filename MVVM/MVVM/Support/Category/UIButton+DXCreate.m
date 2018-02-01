@@ -10,11 +10,39 @@
 
 @implementation UIButton (DXCreate)
 
-+ (instancetype)buttonWithNormalTitle:(NSString *)title normalTitleColor:(UIColor *)titleColor backgroundColor:(UIColor *)backgroundColor {
++ (instancetype)buttonWithNormalTitle:(NSString *)title
+                     normalTitleColor:(UIColor *)titleColor
+                      backgroundColor:(UIColor *)backgroundColor {
     UIButton *button = [self buttonWithType:UIButtonTypeCustom];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:titleColor forState:UIControlStateNormal];
     button.backgroundColor = backgroundColor;
+    return button;
+}
+
++ (instancetype)buttonWithNormalTitle:(NSString *)title
+                     normalTitleColor:(UIColor *)titleColor
+                    disableTitleColor:(UIColor *)disableTitleColor
+                      backgroundColor:(UIColor *)backgroundColor {
+    UIButton *button = [self buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:titleColor forState:UIControlStateNormal];
+    [button setTitleColor:disableTitleColor forState:UIControlStateDisabled];
+    button.backgroundColor = backgroundColor;
+    return button;
+}
+
++ (instancetype)buttonWithNormalTitle:(NSString *)title
+                     normalTitleColor:(UIColor *)titleColor
+                    disableTitleColor:(UIColor *)disableTitleColor
+                      backgroundColor:(UIColor *)backgroundColor
+                             disabled:(BOOL)disabled {
+    UIButton *button = [self buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:titleColor forState:UIControlStateNormal];
+    [button setTitleColor:disableTitleColor forState:UIControlStateDisabled];
+    button.backgroundColor = backgroundColor;
+    button.enabled = disabled;
     return button;
 }
 

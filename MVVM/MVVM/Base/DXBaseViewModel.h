@@ -10,4 +10,13 @@
 
 @interface DXBaseViewModel : NSObject
 
+- (instancetype)initWithParams:(NSDictionary *)params;
+
+@property (nonatomic, copy, readonly) NSDictionary *params;
+
+@property (nonatomic, copy) NSString *title;
+
+- (void)loadData:(void(^)(id json))success
+         failure:(void (^)(NSError *error))failure;
+
 @end

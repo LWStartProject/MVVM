@@ -13,8 +13,10 @@ target 'MVVM' do
 #指定版本
 #pod 'SSZipArchive', '0.9'
 
-    pod 'AFNetworking'
+    pod 'AFNetworking', '~> 3.1.0'
     pod 'Masonry', '~> 1.1.0'
+    pod 'KVOController', '~> 1.2.0'
+    pod 'SDWebImage', '~> 4.2.2'
 
   target 'MVVMTests' do
     inherit! :search_paths

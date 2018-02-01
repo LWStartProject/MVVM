@@ -71,8 +71,8 @@
     }];
     [self.separatorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(0.5);
-        make.leading.mas_equalTo(self).offset(10);
-        make.trailing.mas_equalTo(self).offset(-10);
+        make.left.mas_equalTo(self.mas_left).offset(10);
+        make.right.mas_equalTo(self.mas_right).offset(-10);
         make.top.mas_equalTo(self.phoneView.mas_bottom);
     }];
     

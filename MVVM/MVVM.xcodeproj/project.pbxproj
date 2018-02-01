@@ -20,6 +20,11 @@
 		8E4E42371FE0E4D100DEEEB3 /* DXDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E42361FE0E4D100DEEEB3 /* DXDiscoverVC.m */; };
 		8E4E423C1FE0E4FA00DEEEB3 /* DXMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E423B1FE0E4FA00DEEEB3 /* DXMeVC.m */; };
 		8E4E42401FE0E7EB00DEEEB3 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */; };
+		8E77CCD42021BFCF00097575 /* DXLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E77CCD32021BFCF00097575 /* DXLoginViewModel.m */; };
+		8E77CCD72021C83F00097575 /* DXConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E77CCD62021C83F00097575 /* DXConstant.m */; };
+		8E77CCDA2022C30900097575 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E77CCD92022C30800097575 /* UIImageView+CornerRadius.m */; };
+		8E77CCDD2022FAD700097575 /* FBKVOController+DXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E77CCDC2022FAD700097575 /* FBKVOController+DXExtension.m */; };
+		8E77CCE02022FDCB00097575 /* DXWebImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E77CCDE2022FDCB00097575 /* DXWebImageTool.m */; };
 		8E8656321FDEB2CC00829514 /* DXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8656311FDEB2CC00829514 /* DXAppDelegate.m */; };
 		8E8D381920201D2F00C0ACFC /* UIButton+DXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D381820201D2F00C0ACFC /* UIButton+DXCreate.m */; };
 		8E8D381C202020F000C0ACFC /* DXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D381B202020F000C0ACFC /* DXTools.m */; };
@@ -89,6 +94,17 @@
 		8E4E423D1FE0E67800DEEEB3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8E4E423E1FE0E7EB00DEEEB3 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		8E4E423F1FE0E7EB00DEEEB3 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8E77CCD22021BFCF00097575 /* DXLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXLoginViewModel.h; sourceTree = "<group>"; };
+		8E77CCD32021BFCF00097575 /* DXLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXLoginViewModel.m; sourceTree = "<group>"; };
+		8E77CCD52021C83F00097575 /* DXConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXConstant.h; sourceTree = "<group>"; };
+		8E77CCD62021C83F00097575 /* DXConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXConstant.m; sourceTree = "<group>"; };
+		8E77CCD82022C30800097575 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		8E77CCD92022C30800097575 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		8E77CCDB2022FAD700097575 /* FBKVOController+DXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBKVOController+DXExtension.h"; sourceTree = "<group>"; };
+		8E77CCDC2022FAD700097575 /* FBKVOController+DXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FBKVOController+DXExtension.m"; sourceTree = "<group>"; };
+		8E77CCDE2022FDCB00097575 /* DXWebImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXWebImageTool.m; sourceTree = "<group>"; };
+		8E77CCDF2022FDCB00097575 /* DXWebImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXWebImageTool.h; sourceTree = "<group>"; };
+		8E77CCE12022FF7800097575 /* DXInline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXInline.h; sourceTree = "<group>"; };
 		8E8656301FDEB2CC00829514 /* DXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXAppDelegate.h; sourceTree = "<group>"; };
 		8E8656311FDEB2CC00829514 /* DXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXAppDelegate.m; sourceTree = "<group>"; };
 		8E8D381720201D2F00C0ACFC /* UIButton+DXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DXCreate.h"; sourceTree = "<group>"; };
@@ -243,6 +259,15 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
+		8E77CCD12021BFBE00097575 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E77CCD22021BFCF00097575 /* DXLoginViewModel.h */,
+				8E77CCD32021BFCF00097575 /* DXLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8E8656211FDEB0F200829514 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +354,8 @@
 			isa = PBXGroup;
 			children = (
 				8E9CB9A6201F4A9500B7EC26 /* UIViewCatograyHeader.h */,
+				8E77CCD82022C30800097575 /* UIImageView+CornerRadius.h */,
+				8E77CCD92022C30800097575 /* UIImageView+CornerRadius.m */,
 				8E8D38252020511D00C0ACFC /* UIImage+DXExtension.h */,
 				8E8D38262020511D00C0ACFC /* UIImage+DXExtension.m */,
 				8E8D382220204EA900C0ACFC /* UIBarButtonItem+DXCreate.h */,
@@ -347,6 +374,8 @@
 				8E8D381820201D2F00C0ACFC /* UIButton+DXCreate.m */,
 				8E8D381F2020472300C0ACFC /* UIImageView+DXCreate.h */,
 				8E8D38202020472300C0ACFC /* UIImageView+DXCreate.m */,
+				8E77CCDB2022FAD700097575 /* FBKVOController+DXExtension.h */,
+				8E77CCDC2022FAD700097575 /* FBKVOController+DXExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -354,6 +383,8 @@
 		8E86562C1FDEB1B800829514 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8E77CCDF2022FDCB00097575 /* DXWebImageTool.h */,
+				8E77CCDE2022FDCB00097575 /* DXWebImageTool.m */,
 				8E8D381A202020F000C0ACFC /* DXTools.h */,
 				8E8D381B202020F000C0ACFC /* DXTools.m */,
 			);
@@ -385,6 +416,7 @@
 				8E4E423D1FE0E67800DEEEB3 /* PrefixHeader.pch */,
 				8EB88F7F1FD827C4008AF03F /* main.m */,
 				8EB88F7E1FD827C4008AF03F /* Info.plist */,
+				8E77CCE12022FF7800097575 /* DXInline.h */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -392,6 +424,7 @@
 		8E9CB988201F224500B7EC26 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8E77CCD12021BFBE00097575 /* ViewModel */,
 				8E9CB98C201F228600B7EC26 /* Controller */,
 				8E9CB98D201F229600B7EC26 /* View */,
 			);
@@ -445,6 +478,8 @@
 			children = (
 				8E8656301FDEB2CC00829514 /* DXAppDelegate.h */,
 				8E8656311FDEB2CC00829514 /* DXAppDelegate.m */,
+				8E77CCD52021C83F00097575 /* DXConstant.h */,
+				8E77CCD62021C83F00097575 /* DXConstant.m */,
 				8E86562F1FDEB26400829514 /* Main */,
 				8E8656221FDEB0F200829514 /* Base */,
 				8E8656251FDEB0F200829514 /* Classes */,
@@ -765,6 +800,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E77CCD42021BFCF00097575 /* DXLoginViewModel.m in Sources */,
 				8E9CB993201F287400B7EC26 /* DXBaseModel.m in Sources */,
 				8E9CB99F201F2A4900B7EC26 /* DXBaseView.m in Sources */,
 				8E4E422F1FE0E3F300DEEEB3 /* DXHomePageVC.m in Sources */,
@@ -773,9 +809,13 @@
 				8E9CB9A2201F2A8300B7EC26 /* DXLoginInputView.m in Sources */,
 				8EB88F801FD827C4008AF03F /* main.m in Sources */,
 				8E9CB9A5201F49A000B7EC26 /* UILabel+DXCreate.m in Sources */,
+				8E77CCD72021C83F00097575 /* DXConstant.m in Sources */,
 				8E4E42371FE0E4D100DEEEB3 /* DXDiscoverVC.m in Sources */,
 				8E8D38212020472300C0ACFC /* UIImageView+DXCreate.m in Sources */,
 				8E4E42141FE0E2F700DEEEB3 /* DXTabBarItem.m in Sources */,
+				8E77CCE02022FDCB00097575 /* DXWebImageTool.m in Sources */,
+				8E77CCDA2022C30900097575 /* UIImageView+CornerRadius.m in Sources */,
+				8E77CCDD2022FAD700097575 /* FBKVOController+DXExtension.m in Sources */,
 				8E4E42131FE0E2F700DEEEB3 /* DXTabBarController.m in Sources */,
 				8E8D38272020511E00C0ACFC /* UIImage+DXExtension.m in Sources */,
 				8E4E42331FE0E46F00DEEEB3 /* DXContactVC.m in Sources */,

@@ -19,5 +19,7 @@
 #import "UIImageView+DXCreate.h"
 #import "UIImage+DXExtension.h"
 #import "UIBarButtonItem+DXCreate.h"
+#import "UIImageView+CornerRadius.h"
+#import "FBKVOController+DXExtension.h"
 
 #endif /* UIViewCatograyHeader_h */

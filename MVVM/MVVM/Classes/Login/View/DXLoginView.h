@@ -7,7 +7,16 @@
 //
 
 #import "DXBaseView.h"
+#import "DXLoginInputView.h"
+
+typedef void(^DXLoginActionBlcok)(UIButton *button);
 
 @interface DXLoginView : DXBaseView
+
+@property (nonatomic, strong, readonly) DXLoginInputView *inputView;
+@property (nonatomic, strong, readonly) DXBaseButton *loginButton;
+@property (nonatomic, strong, readonly) UIImageView *iconImageView;
+
++ (instancetype)loginViewWithFrame:(CGRect)frame loginButtonAction:(DXLoginActionBlcok)loginAction;
 
 @end

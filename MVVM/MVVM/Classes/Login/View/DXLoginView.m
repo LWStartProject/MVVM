@@ -7,7 +7,6 @@
 //
 
 #import "DXLoginView.h"
-#import "DXLoginInputView.h"
 
 NSString *kIconPlaceholderImgName = @"placeholder_icon";
 
@@ -16,13 +15,16 @@ NSString *kIconPlaceholderImgName = @"placeholder_icon";
 @property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) DXLoginInputView *inputView;
 @property (nonatomic, strong) DXBaseButton *loginButton;
+@property (nonatomic, copy) DXLoginActionBlcok loginAction;
 
 @end
 
 @implementation DXLoginView
+
 /// MARK: - Public Method
-+ (instancetype)loginView {
-    DXLoginView *loginView = [[DXLoginView alloc] init];
++ (instancetype)loginViewWithFrame:(CGRect)frame loginButtonAction:(DXLoginActionBlcok)loginAction {
+    DXLoginView *loginView = [[DXLoginView alloc] initWithFrame:frame];
+    loginView.loginAction = loginAction;
     return loginView;
 }
 
@@ -62,14 +64,23 @@ NSString *kIconPlaceholderImgName = @"placeholder_icon";
     [self.inputView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.iconImageView.mas_bottom).offset(40);
         make.height.mas_equalTo(128);
-        make.leading.trailing.equalTo(self);
+        make.left.right.equalTo(self);
     }];
     [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.inputView.mas_bottom).offset(40);
         make.height.mas_equalTo(49);
-        make.leading.equalTo(self).offset(12);
-        make.trailing.equalTo(self).offset(-12);
+        make.left.equalTo(self).offset(12);
+        make.right.equalTo(self).offset(-12);
     }];
+    
+    [self.iconImageView zy_cornerRadiusRoundingRect];
+    [self.iconImageView zy_attachBorderWidth:.5f color:RGB(237, 237, 237)];
+}
+
+- (void)loginButtonAction:(UIButton *)button {
+    if (self.loginAction) {
+        self.loginAction(button);
+    }
 }
 
 /// MARK: - Lazy Load
@@ -89,7 +100,12 @@ NSString *kIconPlaceholderImgName = @"placeholder_icon";
 
 - (DXBaseButton *)loginButton {
     if (_loginButton == nil) {
-        _loginButton = [DXBaseButton buttonWithNormalTitle:@"登录" normalTitleColor:[UIColor whiteColor] backgroundColor:RGB(254, 132, 145)];
+        _loginButton = [DXBaseButton buttonWithNormalTitle:@"登录"
+                                          normalTitleColor:RGB(255, 255, 255)
+                                         disableTitleColor:RGBWithAlpha(255, 255, 255, .5f)
+                                           backgroundColor:RGB(254, 132, 145)
+                                                  disabled:NO];
+        [_loginButton addTarget:self action:@selector(loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginButton;
 }

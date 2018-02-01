@@ -8,6 +8,7 @@
 
 #import "DXHomePageVC.h"
 #import "DXLoginVC.h"
+#import "DXLoginViewModel.h"
 
 @interface DXHomePageVC ()
 
@@ -28,7 +29,10 @@
 
 - (void)rightBarButtonItemAction:(UIBarButtonItem *)item {
     NSLog(@"navigationBar 右边按钮");
-    DXLoginVC *loginVC = [[DXLoginVC alloc] init];
+    DXLoginViewModel *loginViewModel = [[DXLoginViewModel alloc] initWithParams:@{
+                                                                                  DXViewModelTitleKey : @"登录"
+                                                                                  }];
+    DXLoginVC *loginVC = [[DXLoginVC alloc] initWithViewModel:loginViewModel];
     [self pushViewController:loginVC animated:YES];
 }
 

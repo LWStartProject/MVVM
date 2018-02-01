@@ -11,13 +11,23 @@
 
 @interface DXBaseViewController ()
 
+@property (nonatomic, strong) DXBaseViewModel *viewModel;
+
 @end
 
 @implementation DXBaseViewController
 
+- (instancetype)initWithViewModel:(DXBaseViewModel *)viewModel {
+    if (self = [super init]) {
+        self.viewModel = viewModel;
+    }
+    return self;
+}
+
 /// MARK: - Life Cyle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = self.viewModel.title;
     [self setupNavigationBar];
 }
 
