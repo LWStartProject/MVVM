@@ -15,6 +15,11 @@
 
 - (nullable instancetype)initWithViewModel:(DXBaseViewModel *__nonnull)viewModel;
 
+/**
+ navitationBar 左边按钮事件
+ @param item 按钮
+ */
+- (void)leftBarButtonItemAction:(UIBarButtonItem *__nonnull)item;
 
 /**
  navitationBar 右边按钮事件

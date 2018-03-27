@@ -20,4 +20,10 @@
     return DXStringIsNotEmpty(self.mobilePhone) && DXStringIsNotEmpty(self.verityCode);
 }
 
+- (void)loginSuccess:(void (^)(id))success failure:(void (^)(NSError *))failure {
+    
+    
+    
+}
+
 @end

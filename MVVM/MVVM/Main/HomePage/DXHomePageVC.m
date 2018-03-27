@@ -9,6 +9,7 @@
 #import "DXHomePageVC.h"
 #import "DXLoginVC.h"
 #import "DXLoginViewModel.h"
+#import "DXTestAFNVC.h"
 
 @interface DXHomePageVC ()
 
@@ -25,6 +26,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)leftBarButtonItemAction:(UIBarButtonItem *)item {
+    NSLog(@"navigationBar 左边按钮");
+    DXTestAFNVC *testAFNVC = [[DXTestAFNVC alloc] init];
+    [self pushViewController:testAFNVC animated:YES];
 }
 
 - (void)rightBarButtonItemAction:(UIBarButtonItem *)item {

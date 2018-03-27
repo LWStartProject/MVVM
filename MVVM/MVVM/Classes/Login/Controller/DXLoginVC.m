@@ -31,13 +31,8 @@
 
 /// MARK: - Privated Interface
 - (void)_configView {
-//    self.navigationItem.title = @"登录";
     self.view.backgroundColor = RGB(247, 247, 247);
     [self.view addSubview:self.loginView];
-//    self.loginView.frame = CGRectMake(0, 0, DXScreen_Width(), DXScreen_Height());
-//    [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.left.bottom.right.equalTo(self.view);
-//    }];
     
     DXLoginInputView *inputView = self.loginView.inputView;
     [inputView.phoneNumberTextField addTarget:self
@@ -47,7 +42,6 @@
                                       action:@selector(_textFieldTextDidChange:)
                             forControlEvents:UIControlEventEditingChanged];
     
-    
     _KVOController = [FBKVOController controllerWithObserver:self];
     [_KVOController dx_observe:self.viewModel keyPath:@"iconUrlString" block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         [DXWebImageTool setImageWithURL:change[NSKeyValueChangeNewKey] placeholderImage:placeholderUserIcon() imageView:self.loginView.iconImageView];
@@ -55,7 +49,16 @@
 }
 
 /// MARK: - Net Work
-
+- (void)login {
+    
+//    WeakSelf
+    [self.viewModel loginSuccess:^(id json) {
+//        StrongSelf
+        
+    } failure:^(NSError *error) {
+        
+    }];
+}
 
 /// MARK: - User Actions
 - (void)_textFieldTextDidChange:(UITextField *)textField {
@@ -73,8 +76,11 @@
 /// MARK: - Laze Initializer
 - (DXLoginView *)loginView {
     if (_loginView == nil) {
+        WeakSelf
         _loginView = [DXLoginView loginViewWithFrame:CGRectMake(0, 0, DXScreen_Width(), DXScreen_Height()) loginButtonAction:^(UIButton *button) {
             NSLog(@"登录");
+            StrongSelf
+            [self login];
         }];
     }
     return _loginView;

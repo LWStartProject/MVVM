@@ -26,10 +26,10 @@ BOOL DXArrayIsEmpty(NSArray *array) {
     return DXObjectIsNil(array) || array.count == 0;
 }
 
-CGFloat DXScreen_Width() {
+CGFloat DXScreen_Width(void) {
     return [UIScreen mainScreen].bounds.size.width;
 }
 
-CGFloat DXScreen_Height() {
+CGFloat DXScreen_Height(void) {
     return [UIScreen mainScreen].bounds.size.height;
 }

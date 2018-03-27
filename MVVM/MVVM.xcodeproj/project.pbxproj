@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A920C74D5827443A838E235 /* libPods-MVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD069E3D90298BB54FC1C335 /* libPods-MVVMTests.a */; };
 		4C082B8A335B46A76871887F /* libPods-MVVMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE07ECBAA45F0278E80F5B3 /* libPods-MVVMUITests.a */; };
+		8E06FCEC205F5796007E53C2 /* DXTestAFNVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06FCEB205F5796007E53C2 /* DXTestAFNVC.m */; };
 		8E4E42111FE0E2F700DEEEB3 /* DXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420B1FE0E2F700DEEEB3 /* DXTabBarButton.m */; };
 		8E4E42121FE0E2F700DEEEB3 /* DXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420C1FE0E2F700DEEEB3 /* DXTabBar.m */; };
 		8E4E42131FE0E2F700DEEEB3 /* DXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E420D1FE0E2F700DEEEB3 /* DXTabBarController.m */; };
@@ -71,6 +72,8 @@
 		184D6AC58AD5361B40755E25 /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		65158F16447EB9F0531C961B /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88597D5A8DD4BE07D8090EEE /* Pods-MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTests/Pods-MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E06FCEA205F5796007E53C2 /* DXTestAFNVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXTestAFNVC.h; sourceTree = "<group>"; };
+		8E06FCEB205F5796007E53C2 /* DXTestAFNVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXTestAFNVC.m; sourceTree = "<group>"; };
 		8E4E42091FE0E2F700DEEEB3 /* DXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTabBarController.h; sourceTree = "<group>"; };
 		8E4E420A1FE0E2F700DEEEB3 /* DXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTabBarItem.h; sourceTree = "<group>"; };
 		8E4E420B1FE0E2F700DEEEB3 /* DXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTabBarButton.m; sourceTree = "<group>"; };
@@ -197,6 +200,23 @@
 				06442CCB7210B2F550AF4DC8 /* Pods-MVVMUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E06FCE8205F5742007E53C2 /* TestFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				8E06FCE9205F5759007E53C2 /* TestAFN */,
+			);
+			path = TestFrameWork;
+			sourceTree = "<group>";
+		};
+		8E06FCE9205F5759007E53C2 /* TestAFN */ = {
+			isa = PBXGroup;
+			children = (
+				8E06FCEA205F5796007E53C2 /* DXTestAFNVC.h */,
+				8E06FCEB205F5796007E53C2 /* DXTestAFNVC.m */,
+			);
+			path = TestAFN;
 			sourceTree = "<group>";
 		};
 		8E4E42081FE0E2F700DEEEB3 /* CustomTabBar */ = {
@@ -401,6 +421,7 @@
 		8E86562F1FDEB26400829514 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8E06FCE8205F5742007E53C2 /* TestFrameWork */,
 				8E4E42391FE0E4EE00DEEEB3 /* Me */,
 				8E4E42341FE0E4BF00DEEEB3 /* Discover */,
 				8E4E42301FE0E41500DEEEB3 /* Contact */,
@@ -815,6 +836,7 @@
 				8E4E42141FE0E2F700DEEEB3 /* DXTabBarItem.m in Sources */,
 				8E77CCE02022FDCB00097575 /* DXWebImageTool.m in Sources */,
 				8E77CCDA2022C30900097575 /* UIImageView+CornerRadius.m in Sources */,
+				8E06FCEC205F5796007E53C2 /* DXTestAFNVC.m in Sources */,
 				8E77CCDD2022FAD700097575 /* FBKVOController+DXExtension.m in Sources */,
 				8E4E42131FE0E2F700DEEEB3 /* DXTabBarController.m in Sources */,
 				8E8D38272020511E00C0ACFC /* UIImage+DXExtension.m in Sources */,
@@ -987,7 +1009,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ywx.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1005,7 +1027,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ywx.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

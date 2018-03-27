@@ -116,14 +116,14 @@
 
 - (UITextField *)verifyCodeTextField {
     if (_verifyCodeTextField == nil) {
-        _verifyCodeTextField = [UITextField textFieldWithTextColor:[UIColor blackColor] fontSize:14 placeholder:@"请输入验证码"];
+        _verifyCodeTextField = [UITextField textFieldWithTextColor:[UIColor blackColor] fontSize:14 placeholder:@"请输入验证码" keyboardType:UIKeyboardTypeNumberPad];
     }
     return _verifyCodeTextField;
 }
 
 - (UITextField *)phoneNumberTextField {
     if (_phoneNumberTextField == nil) {
-        _phoneNumberTextField = [UITextField textFieldWithTextColor:[UIColor blackColor] fontSize:14 placeholder:@"请输入手机号码"];
+        _phoneNumberTextField = [UITextField textFieldWithTextColor:[UIColor blackColor] fontSize:14 placeholder:@"请输入手机号码" keyboardType:UIKeyboardTypeNumberPad];
     }
     return _phoneNumberTextField;
 }

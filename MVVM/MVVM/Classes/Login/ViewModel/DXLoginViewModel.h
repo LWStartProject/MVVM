@@ -20,4 +20,7 @@
 /// 头像url
 @property (nonatomic, copy, readonly) NSString *iconUrlString;
 
+- (void)loginSuccess:(void(^)(id json))success
+             failure:(void (^)(NSError *error))failure;
+
 @end

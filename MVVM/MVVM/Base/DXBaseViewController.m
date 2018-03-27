@@ -45,6 +45,16 @@
 //    NSString *title = self.navigationItem.title.length > 0 ? self.navigationItem.title : @"返回";
 //    UIBarButtonItem *backItem = [UIBarButtonItem dx_backItemWithTitle:title imageName:@"barbuttonicon_back_15x30" target:self action:@selector(backItemAction:)];
 //    self.navigationItem.leftBarButtonItems = @[backItem];
+    NSMutableArray *leftBarButtonItems = @[].mutableCopy;
+    if ([self isKindOfClass:[DXHomePageVC class]]) {
+        UIImage *leftImage = [UIImage imageNamed:@"barButtonicon_test_30x30"];
+        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:leftImage style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonItemAction:)];
+        [leftBarButtonItems addObject:leftItem];
+    }
+    if (leftBarButtonItems.count <= 0) {
+        return;
+    }
+    self.navigationItem.leftBarButtonItems = leftBarButtonItems;
 }
 
 - (void)setupNavigationBarRightItems {
@@ -65,6 +75,10 @@
 
 
 /// MARK: - User Actions
+- (void)leftBarButtonItemAction:(UIBarButtonItem *)item {
+    
+}
+
 - (void)rightBarButtonItemAction:(UIBarButtonItem *)item {
     
 }

@@ -25,9 +25,9 @@ BOOL DXStringIsNotEmpty(NSString *string);
 BOOL DXArrayIsEmpty(NSArray *array);
 
 /// 屏幕的宽
-CGFloat DXScreen_Width();
+CGFloat DXScreen_Width(void);
 
 /// 屏幕的高
-CGFloat DXScreen_Height();
+CGFloat DXScreen_Height(void);
 
 
